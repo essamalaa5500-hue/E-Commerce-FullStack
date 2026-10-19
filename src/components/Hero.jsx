@@ -12,7 +12,7 @@ export default function Hero() {
     <Swiper
       spaceBetween={30}
       centeredSlides={true}
-      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
       pagination={{ clickable: true }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
