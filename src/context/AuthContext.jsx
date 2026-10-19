@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
     async function getRefreshToken() {
       try {
         const response = await axios.get(
-          "https://essam-ecommerce-api.bonto.run/users/refresh",
+          "https://e-commerce-api-phi-sage.vercel.app/users/refresh",
           { withCredentials: true },
         );
         setUser(response.data.user);
@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
   const register = async ({ name, email, password }) => {
     try {
       const response = await axios.post(
-        "https://essam-ecommerce-api.bonto.run/users/signup",
+        "https://e-commerce-api-phi-sage.vercel.app/users/signup",
         { name, email, password },
         { withCredentials: true },
       );
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   const login = async ({ email, password }) => {
     try {
       const response = await axios.post(
-        "https://essam-ecommerce-api.bonto.run/users/login",
+        "https://e-commerce-api-phi-sage.vercel.app/users/login",
         { email, password },
         { withCredentials: true },
       );
@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }) => {
   const logOut = async () => {
     try {
       await axios.post(
-        "https://essam-ecommerce-api.bonto.run/users/logout",
+        "https://e-commerce-api-phi-sage.vercel.app/users/logout",
         {},
         { withCredentials: true },
       );

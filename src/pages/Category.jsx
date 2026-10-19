@@ -10,7 +10,7 @@ export default function Category() {
     async function getCategory() {
       try {
         const response = await axios.get(
-          "https://essam-ecommerce-api.bonto.run/category",
+          "https://e-commerce-api-phi-sage.vercel.app/category",
         );
 
         setCategory(response.data.data);
